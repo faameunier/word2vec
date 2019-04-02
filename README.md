@@ -1,3 +1,19 @@
+# Installation
+
+Simply install the requirements
+
+`pip install -r requirements.txt`
+
+# Usage
+
+The SkipGram is implemented in **skipGram.py**.
+A command line interface is available (but only with default parameters).
+To train the model on a dataset use:
+
+`skipGram.py --text path_to_data.txt --model path_to_save_model.pkl`
+
+Testing the model will compute similarities between all word in the data folder. This data comes from https://github.com/mfaruqui/eval-word-vectors .
+
 # Motivation
 This project was conducted as a homework for the course **Natural Language Processing E4-3** teached by Matthias Galle. The subject was to reimplement the SkipGram with negative sampling model, developped by Mikolov and al., from scratch.
 Special care was taken to optimize the code as much as possible. **The Brown corpus was used to benchmark the performance of the code with a size of embeddings of 200, a context windows size of 5, and 5 negative example for each context word**.
